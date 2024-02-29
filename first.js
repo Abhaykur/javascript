@@ -85,3 +85,70 @@ if(num >= 90 && num <= 100){
     grade = "F";
 }
 console.log("Your grade according to your score " + num +" is " +grade);
+
+// Types of loops and its feature.
+
+
+// for loop
+
+for(let i = 1; i <= 5; i++){
+    console.log("Apna college");
+}
+
+//Sum of number n natural number;
+
+let num1 = prompt("Enter a natural number");
+let sum = 0;
+for(let i =1;i<=num1;i++){
+    sum = sum +i;
+}
+console.log("sum of "+ num1 +" natural number is "+sum);
+
+//while loop.
+
+let i = 1;
+while(i<=5){
+    console.log(i);
+    i++;
+}
+/************************************* */
+//do while
+
+let i =1;
+do{
+    console.log(i);
+    i++;
+}while(i<=5);
+/********************************************** */
+
+// for-of loop. This loop is to itterate both string and arrays values.
+
+let str = "Abhay kumar";
+for(let i of str){
+    console.log(i);
+}
+
+/********************************************************** */
+
+// for-in loop: is used to iterate objects.
+
+let student1 = {
+    name:"Abhay Kumar",
+    class: "MCA",
+    roll:103,
+    phone_no:8083153058,
+    email:"abhaykur123@gmail.com"
+};
+
+for(let key in student1){
+    console.log("Key = ",key," value = ",student1[key]);
+}
+
+
+//Print all even numbers between 0 to 100.
+
+for(let i=0;i<=100;i++){
+    if(i%2===0 && i != 0){
+        console.log(i);
+    }
+}
