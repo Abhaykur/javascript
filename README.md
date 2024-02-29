@@ -6,3 +6,4 @@ Added non primitive variable.
 Added some more features (operator).
 Added loop features.
 Added index.html file.
+Add some features of strings.
