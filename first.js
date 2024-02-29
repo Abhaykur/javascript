@@ -19,3 +19,12 @@ const student = {
 
 console.log(student.firstName);
 console.log(student["firstName"]);
+
+// how to comment.
+
+//This is single line comment.
+/*This is 
+    multiple 
+    line
+    comments.
+*/
