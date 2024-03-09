@@ -155,55 +155,81 @@
 
 // Strings.
 
-let str = "Anisha Kumari";
-console.log(str); // to print string as it is.
-console.log(str.length); // to find length of string.
-console.log(str[2]);// to print indexed character from string.
+// let str = "Anisha Kumari";
+// console.log(str); // to print string as it is.
+// console.log(str.length); // to find length of string.
+// console.log(str[2]);// to print indexed character from string.
 
 //Templates Literals in JS.
 
-let template = `This is example of template literal`;
-console.log(template);
+// let template = `This is example of template literal`;
+// console.log(template);
 
 //String Interpolation.
 
-let obj = {
-    item : "Pen",
-    price : 10
-};
+// let obj = {
+//     item : "Pen",
+//     price : 10
+// };
 
 //Simply print.
-console.log("The cost of ",obj.item," is ",obj.price," Ruppes");
+// console.log("The cost of ",obj.item," is ",obj.price," Ruppes");
 
 //Same we can print through template literal.
 
-let output = `The cost of ${obj.item} is ${obj.price} Rupees`;
-console.log(output);
+// let output = `The cost of ${obj.item} is ${obj.price} Rupees`;
+// console.log(output);
 
-let specialString =`The sum of 3 numbers is ${1+2+3}`;
-console.log(specialString);
+// let specialString =`The sum of 3 numbers is ${1+2+3}`;
+// console.log(specialString);
 
-//String methods.
+// //String methods.
 
-let str1 = "  AbhAy KumaAr";
-console.log(str1);
-console.log (str1.toUpperCase());
-console.log(str1.toLowerCase());
-console.log(str1);
-console.log(str1.trim());
+// let str1 = "  AbhAy KumaAr";
+// console.log(str1);
+// console.log (str1.toUpperCase());
+// console.log(str1.toLowerCase());
+// console.log(str1);
+// console.log(str1.trim());
 
-console.log(str.slice(1,7));//exclude value at end position.(bhay k)
+// console.log(str.slice(1,7));//exclude value at end position.(bhay k)
 
-console.log(str.concat(str1));//contination of two strings.
-console.log(str1.trim().concat(str));//trim the first string and then concatinate.
-console.log(str1.replace("y","i"))// to replace any single character.
-console.log(str1.replace("Abh","An"));// to replace more than one character.
-console.log(str1.replace("A","S"));// through this we can only replace the first character which found.
-console.log(str1.replaceAll("A","s"));//through thi we can replace all the charater which found same.
-console.log(str1.charAt(4));// to find the character at the given index.
+// console.log(str.concat(str1));//contination of two strings.
+// console.log(str1.trim().concat(str));//trim the first string and then concatinate.
+// console.log(str1.replace("y","i"))// to replace any single character.
+// console.log(str1.replace("Abh","An"));// to replace more than one character.
+// console.log(str1.replace("A","S"));// through this we can only replace the first character which found.
+// console.log(str1.replaceAll("A","s"));//through thi we can replace all the charater which found same.
+// console.log(str1.charAt(4));// to find the character at the given index.
 
-// Practice question.
+// // Practice question.
 
-let fullName = prompt("please enter you full name without using space");
-let userName = `@${fullName}${fullName.length}`;
-console.log(userName);
+// let fullName = prompt("please enter you full name without using space");
+// let userName = `@${fullName}${fullName.length}`;
+// console.log(userName);
+
+//Arrays
+
+// let marks = [80,60,77,90,53];
+// // console.log(marks);
+// // console.log(marks[3]);.\
+// let sum =0;
+// for(let i=0; i<marks.length;i++)
+// {
+//     // console.log(marks[i]);
+//     sum = sum + marks[i];
+// }
+// let avg = sum/marks.length;
+// console.log("Average =",avg);
+
+let companies = ["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
+for(company of companies){
+    let companyName = `Company = ${company}`;
+    console.log(companyName);
+}
+companies.shift();
+console.log(companies);
+companies.splice(2,2,"OLA");
+console.log(companies);
+companies.push("Amazon");
+console.log(companies);
